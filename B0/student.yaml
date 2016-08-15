@@ -1,501 +1,405 @@
 ---
-- !ruby/object:Student
-  id: 0
-  name: teuhgubv
-  age: 19
+- id: 0
+  name: Bjxhve
+  age: 16
   gender: 女
-- !ruby/object:Student
-  id: 1
-  name: vytnokva
-  age: 15
+- id: 1
+  name: Cqrakb
+  age: 17
   gender: 女
-- !ruby/object:Student
-  id: 2
-  name: orwrtdhm
+- id: 2
+  name: Prxeeg
   age: 20
   gender: 男
-- !ruby/object:Student
-  id: 3
-  name: wqsssqij
-  age: 19
-  gender: 男
-- !ruby/object:Student
-  id: 4
-  name: scktauuh
-  age: 15
-  gender: 女
-- !ruby/object:Student
-  id: 5
-  name: ubaeyoev
-  age: 16
-  gender: 女
-- !ruby/object:Student
-  id: 6
-  name: qctxlmcl
-  age: 18
-  gender: 女
-- !ruby/object:Student
-  id: 7
-  name: hbvphxmq
-  age: 16
-  gender: 男
-- !ruby/object:Student
-  id: 8
-  name: wclqltck
+- id: 3
+  name: Mhsoju
   age: 15
   gender: 男
-- !ruby/object:Student
-  id: 9
-  name: urvtwegg
-  age: 16
-  gender: 男
-- !ruby/object:Student
-  id: 10
-  name: htgovhqv
-  age: 20
-  gender: 女
-- !ruby/object:Student
-  id: 11
-  name: gpnlyukr
-  age: 17
-  gender: 男
-- !ruby/object:Student
-  id: 12
-  name: cunjmoyb
-  age: 16
-  gender: 男
-- !ruby/object:Student
-  id: 13
-  name: taawhjfh
-  age: 16
-  gender: 男
-- !ruby/object:Student
-  id: 14
-  name: fhnpkhlq
-  age: 16
-  gender: 女
-- !ruby/object:Student
-  id: 15
-  name: jdddxbmw
-  age: 20
-  gender: 女
-- !ruby/object:Student
-  id: 16
-  name: brasnfon
-  age: 18
-  gender: 男
-- !ruby/object:Student
-  id: 17
-  name: uhyhapdi
-  age: 16
-  gender: 男
-- !ruby/object:Student
-  id: 18
-  name: xusufxtc
-  age: 20
-  gender: 男
-- !ruby/object:Student
-  id: 19
-  name: prnruvui
-  age: 18
-  gender: 男
-- !ruby/object:Student
-  id: 20
-  name: vbrapyhv
-  age: 20
-  gender: 男
-- !ruby/object:Student
-  id: 21
-  name: lnxltvfq
-  age: 20
-  gender: 女
-- !ruby/object:Student
-  id: 22
-  name: lmhoggnu
-  age: 17
-  gender: 男
-- !ruby/object:Student
-  id: 23
-  name: acqjlojx
-  age: 19
-  gender: 男
-- !ruby/object:Student
-  id: 24
-  name: ajhumufm
-  age: 18
-  gender: 女
-- !ruby/object:Student
-  id: 25
-  name: qlqwowjq
-  age: 18
-  gender: 女
-- !ruby/object:Student
-  id: 26
-  name: kdyfkrts
-  age: 18
-  gender: 女
-- !ruby/object:Student
-  id: 27
-  name: bwdxcvnk
-  age: 15
-  gender: 男
-- !ruby/object:Student
-  id: 28
-  name: vecgkgup
-  age: 20
-  gender: 女
-- !ruby/object:Student
-  id: 29
-  name: dltqvywu
-  age: 17
-  gender: 男
-- !ruby/object:Student
-  id: 30
-  name: tfwaraxx
-  age: 16
-  gender: 女
-- !ruby/object:Student
-  id: 31
-  name: luqtiraw
-  age: 19
-  gender: 女
-- !ruby/object:Student
-  id: 32
-  name: liepgqiy
-  age: 20
-  gender: 男
-- !ruby/object:Student
-  id: 33
-  name: tubwajme
-  age: 20
-  gender: 男
-- !ruby/object:Student
-  id: 34
-  name: obrmcbdg
-  age: 17
-  gender: 男
-- !ruby/object:Student
-  id: 35
-  name: gnxofmnd
-  age: 18
-  gender: 男
-- !ruby/object:Student
-  id: 36
-  name: pcnrhicx
-  age: 15
-  gender: 男
-- !ruby/object:Student
-  id: 37
-  name: cqompcko
-  age: 19
-  gender: 男
-- !ruby/object:Student
-  id: 38
-  name: eelnyiei
-  age: 18
-  gender: 女
-- !ruby/object:Student
-  id: 39
-  name: kpriidoh
-  age: 17
-  gender: 男
-- !ruby/object:Student
-  id: 40
-  name: vlmddkrs
-  age: 18
-  gender: 女
-- !ruby/object:Student
-  id: 41
-  name: lniyqnou
-  age: 20
-  gender: 男
-- !ruby/object:Student
-  id: 42
-  name: wqlphvbv
-  age: 19
-  gender: 男
-- !ruby/object:Student
-  id: 43
-  name: xqroisqr
-  age: 16
-  gender: 男
-- !ruby/object:Student
-  id: 44
-  name: rucgaiyx
-  age: 17
-  gender: 女
-- !ruby/object:Student
-  id: 45
-  name: jjrwayce
-  age: 19
-  gender: 男
-- !ruby/object:Student
-  id: 46
-  name: onsrprvw
-  age: 17
-  gender: 女
-- !ruby/object:Student
-  id: 47
-  name: porpvgto
-  age: 16
-  gender: 女
-- !ruby/object:Student
-  id: 48
-  name: tstwjccu
-  age: 19
-  gender: 男
-- !ruby/object:Student
-  id: 49
-  name: pjhpsuuu
-  age: 18
-  gender: 男
-- !ruby/object:Student
-  id: 50
-  name: qyxxrcru
-  age: 15
-  gender: 男
-- !ruby/object:Student
-  id: 51
-  name: aafaoloj
-  age: 17
-  gender: 男
-- !ruby/object:Student
-  id: 52
-  name: ltpsataf
-  age: 17
-  gender: 男
-- !ruby/object:Student
-  id: 53
-  name: mcjhrixp
-  age: 18
-  gender: 女
-- !ruby/object:Student
-  id: 54
-  name: qvsljitt
-  age: 17
-  gender: 女
-- !ruby/object:Student
-  id: 55
-  name: ubetwtqy
-  age: 18
-  gender: 女
-- !ruby/object:Student
-  id: 56
-  name: cbajkpkb
-  age: 15
-  gender: 男
-- !ruby/object:Student
-  id: 57
-  name: nodxovmk
-  age: 19
-  gender: 女
-- !ruby/object:Student
-  id: 58
-  name: ktylmaaq
-  age: 18
-  gender: 女
-- !ruby/object:Student
-  id: 59
-  name: yfndwctf
-  age: 16
-  gender: 女
-- !ruby/object:Student
-  id: 60
-  name: qsmialaq
-  age: 20
-  gender: 女
-- !ruby/object:Student
-  id: 61
-  name: gknkjnlx
-  age: 17
-  gender: 女
-- !ruby/object:Student
-  id: 62
-  name: chknohgj
-  age: 15
-  gender: 男
-- !ruby/object:Student
-  id: 63
-  name: thawgitw
-  age: 18
-  gender: 女
-- !ruby/object:Student
-  id: 64
-  name: kjsmshbr
-  age: 19
-  gender: 女
-- !ruby/object:Student
-  id: 65
-  name: bluhrmjf
-  age: 15
-  gender: 男
-- !ruby/object:Student
-  id: 66
-  name: hhbshfxt
-  age: 17
-  gender: 女
-- !ruby/object:Student
-  id: 67
-  name: vfimhlwv
-  age: 17
-  gender: 女
-- !ruby/object:Student
-  id: 68
-  name: ubukitax
+- id: 4
+  name: Fbegvm
   age: 15
   gender: 女
-- !ruby/object:Student
-  id: 69
-  name: jjtobrco
-  age: 18
-  gender: 女
-- !ruby/object:Student
-  id: 70
-  name: yxvdieov
+- id: 5
+  name: Cyhdqf
   age: 15
-  gender: 女
-- !ruby/object:Student
-  id: 71
-  name: ecdobuta
-  age: 18
-  gender: 女
-- !ruby/object:Student
-  id: 72
-  name: ssqxihnp
-  age: 18
   gender: 男
-- !ruby/object:Student
-  id: 73
-  name: uwuqrina
-  age: 19
-  gender: 男
-- !ruby/object:Student
-  id: 74
-  name: wpscseop
-  age: 16
-  gender: 男
-- !ruby/object:Student
-  id: 75
-  name: pcovhlmg
-  age: 20
-  gender: 女
-- !ruby/object:Student
-  id: 76
-  name: podoxfvo
-  age: 19
-  gender: 女
-- !ruby/object:Student
-  id: 77
-  name: ollkgnpu
-  age: 15
-  gender: 女
-- !ruby/object:Student
-  id: 78
-  name: diqflekx
-  age: 20
-  gender: 男
-- !ruby/object:Student
-  id: 79
-  name: sjocufql
-  age: 16
-  gender: 女
-- !ruby/object:Student
-  id: 80
-  name: klebesqg
-  age: 19
-  gender: 男
-- !ruby/object:Student
-  id: 81
-  name: bipatfji
+- id: 6
+  name: Vhagwj
   age: 17
   gender: 女
-- !ruby/object:Student
-  id: 82
-  name: egvunukq
-  age: 19
-  gender: 男
-- !ruby/object:Student
-  id: 83
-  name: dvlymawf
-  age: 16
-  gender: 女
-- !ruby/object:Student
-  id: 84
-  name: cpoaoafy
+- id: 7
+  name: Rvgxxs
   age: 19
   gender: 女
-- !ruby/object:Student
-  id: 85
-  name: dsuxlckc
+- id: 8
+  name: Bidvub
   age: 17
-  gender: 男
-- !ruby/object:Student
-  id: 86
-  name: wvatvegq
-  age: 18
   gender: 女
-- !ruby/object:Student
-  id: 87
-  name: wpdgcmex
-  age: 18
-  gender: 男
-- !ruby/object:Student
-  id: 88
-  name: btsvgfax
-  age: 15
-  gender: 女
-- !ruby/object:Student
-  id: 89
-  name: madehceu
-  age: 20
-  gender: 女
-- !ruby/object:Student
-  id: 90
-  name: agtqaont
-  age: 18
-  gender: 男
-- !ruby/object:Student
-  id: 91
-  name: sblhmdwu
-  age: 20
-  gender: 男
-- !ruby/object:Student
-  id: 92
-  name: ghmlyukg
+- id: 9
+  name: Rthgph
   age: 15
   gender: 男
-- !ruby/object:Student
-  id: 93
-  name: xyqhhuct
-  age: 17
+- id: 10
+  name: Oxoaid
+  age: 15
   gender: 男
-- !ruby/object:Student
-  id: 94
-  name: mfcsyjce
-  age: 18
+- id: 11
+  name: Qyafeq
+  age: 17
   gender: 女
-- !ruby/object:Student
-  id: 95
-  name: jmfxjomt
+- id: 12
+  name: Nsgcfw
   age: 16
   gender: 女
-- !ruby/object:Student
-  id: 96
-  name: cximbkoe
-  age: 18
-  gender: 男
-- !ruby/object:Student
-  id: 97
-  name: elwvujce
-  age: 18
-  gender: 男
-- !ruby/object:Student
-  id: 98
-  name: efttepxg
-  age: 18
-  gender: 男
-- !ruby/object:Student
-  id: 99
-  name: hjkll
-  age: '14'
+- id: 13
+  name: Dypgbc
+  age: 16
   gender: 女
+- id: 14
+  name: Rqpirx
+  age: 18
+  gender: 男
+- id: 15
+  name: Boreyt
+  age: 16
+  gender: 男
+- id: 16
+  name: Vkoepn
+  age: 16
+  gender: 男
+- id: 17
+  name: Noddal
+  age: 20
+  gender: 女
+- id: 18
+  name: Lwapac
+  age: 19
+  gender: 女
+- id: 19
+  name: Mcrduy
+  age: 18
+  gender: 女
+- id: 20
+  name: Cfijqs
+  age: 18
+  gender: 男
+- id: 21
+  name: Hakibr
+  age: 19
+  gender: 女
+- id: 22
+  name: Ocjnko
+  age: 19
+  gender: 男
+- id: 23
+  name: Ymjoiq
+  age: 20
+  gender: 女
+- id: 24
+  name: Qtxwiv
+  age: 15
+  gender: 女
+- id: 25
+  name: Scdlgb
+  age: 15
+  gender: 男
+- id: 26
+  name: Oevlww
+  age: 19
+  gender: 女
+- id: 27
+  name: Aqojuy
+  age: 18
+  gender: 男
+- id: 28
+  name: Qubcti
+  age: 19
+  gender: 男
+- id: 29
+  name: Akojjj
+  age: 18
+  gender: 男
+- id: 30
+  name: Ddtqqu
+  age: 17
+  gender: 男
+- id: 31
+  name: Sdkfdy
+  age: 20
+  gender: 男
+- id: 32
+  name: Awmwpm
+  age: 19
+  gender: 女
+- id: 33
+  name: Uhdugr
+  age: 15
+  gender: 男
+- id: 34
+  name: Fjoahq
+  age: 18
+  gender: 女
+- id: 35
+  name: Xtppve
+  age: 15
+  gender: 男
+- id: 36
+  name: Cxjrsp
+  age: 15
+  gender: 男
+- id: 37
+  name: Xmenjj
+  age: 19
+  gender: 女
+- id: 38
+  name: Elcsuf
+  age: 16
+  gender: 女
+- id: 39
+  name: Dafqif
+  age: 16
+  gender: 女
+- id: 40
+  name: Bajjjc
+  age: 17
+  gender: 男
+- id: 41
+  name: Dehdbo
+  age: 18
+  gender: 男
+- id: 42
+  name: Mgbebg
+  age: 20
+  gender: 男
+- id: 43
+  name: Tumkcm
+  age: 20
+  gender: 女
+- id: 44
+  name: Fedgli
+  age: 18
+  gender: 男
+- id: 45
+  name: Plkkub
+  age: 19
+  gender: 男
+- id: 46
+  name: Jkdkdc
+  age: 19
+  gender: 男
+- id: 47
+  name: Tepcki
+  age: 17
+  gender: 女
+- id: 48
+  name: Wqensq
+  age: 15
+  gender: 女
+- id: 49
+  name: Omthnf
+  age: 19
+  gender: 男
+- id: 50
+  name: Vumoly
+  age: 16
+  gender: 男
+- id: 51
+  name: Wcfcit
+  age: 16
+  gender: 男
+- id: 52
+  name: Mpijpf
+  age: 16
+  gender: 男
+- id: 53
+  name: Xegbjp
+  age: 20
+  gender: 女
+- id: 54
+  name: Bysnyv
+  age: 19
+  gender: 男
+- id: 55
+  name: Sjwchd
+  age: 18
+  gender: 女
+- id: 56
+  name: Qtkmcx
+  age: 19
+  gender: 男
+- id: 57
+  name: Ovumde
+  age: 17
+  gender: 男
+- id: 58
+  name: Qccjxx
+  age: 19
+  gender: 女
+- id: 59
+  name: Frlhef
+  age: 15
+  gender: 男
+- id: 60
+  name: Fjepha
+  age: 20
+  gender: 女
+- id: 61
+  name: Ftynsx
+  age: 18
+  gender: 女
+- id: 62
+  name: Jkmixw
+  age: 15
+  gender: 女
+- id: 63
+  name: Kxsabb
+  age: 17
+  gender: 男
+- id: 64
+  name: Nfwifp
+  age: 18
+  gender: 男
+- id: 65
+  name: Elyjeb
+  age: 15
+  gender: 女
+- id: 66
+  name: Uodfoj
+  age: 19
+  gender: 男
+- id: 67
+  name: Uwxrwn
+  age: 15
+  gender: 女
+- id: 68
+  name: Cihiry
+  age: 18
+  gender: 女
+- id: 69
+  name: Ubggqj
+  age: 20
+  gender: 男
+- id: 70
+  name: Pyccum
+  age: 18
+  gender: 男
+- id: 71
+  name: Edqpks
+  age: 19
+  gender: 男
+- id: 72
+  name: Usnwhs
+  age: 15
+  gender: 男
+- id: 73
+  name: Sbrsis
+  age: 20
+  gender: 男
+- id: 74
+  name: Lgxcqg
+  age: 19
+  gender: 女
+- id: 75
+  name: Cdeicr
+  age: 18
+  gender: 女
+- id: 76
+  name: Ktxpqw
+  age: 16
+  gender: 女
+- id: 77
+  name: Uimgow
+  age: 17
+  gender: 男
+- id: 78
+  name: Dbyoij
+  age: 20
+  gender: 男
+- id: 79
+  name: Sbcpks
+  age: 17
+  gender: 男
+- id: 80
+  name: Ikpnlq
+  age: 20
+  gender: 男
+- id: 81
+  name: Eaomdv
+  age: 20
+  gender: 女
+- id: 82
+  name: Hyrdpc
+  age: 17
+  gender: 女
+- id: 83
+  name: Cyokbx
+  age: 20
+  gender: 女
+- id: 84
+  name: Ctsnwg
+  age: 18
+  gender: 男
+- id: 85
+  name: Paoyvp
+  age: 15
+  gender: 女
+- id: 86
+  name: Wdtpoi
+  age: 16
+  gender: 女
+- id: 87
+  name: Trmlbe
+  age: 19
+  gender: 女
+- id: 88
+  name: Xyodus
+  age: 16
+  gender: 男
+- id: 89
+  name: Wknjbd
+  age: 18
+  gender: 男
+- id: 90
+  name: Ttufij
+  age: 20
+  gender: 男
+- id: 91
+  name: Bftoqe
+  age: 20
+  gender: 女
+- id: 92
+  name: Fwwtga
+  age: 19
+  gender: 男
+- id: 93
+  name: Groole
+  age: 19
+  gender: 男
+- id: 94
+  name: Knsykm
+  age: 18
+  gender: 男
+- id: 95
+  name: Nkigaq
+  age: 19
+  gender: 男
+- id: 96
+  name: Davwsh
+  age: 16
+  gender: 女
+- id: 97
+  name: Vxsgru
+  age: 17
+  gender: 男
+- id: 98
+  name: Otwcrg
+  age: 19
+  gender: 女
+- id: 99
+  name: Baggoh
+  age: 16
+  gender: 女
+- id: 100
+  name: yuqing
+  age: 21
+  gender: 男

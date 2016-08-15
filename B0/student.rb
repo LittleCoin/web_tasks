@@ -30,24 +30,43 @@ def add( i )
    info = gets.split
    Student.new(i, info[0], info[1], info[2])
 end
-
+def correct(student)
+  puts "请输入修改信息  姓名 年龄 性别"
+  info = gets.split
+  student.name = info[0].to_s
+  student.age = info[1].to_i
+  student.gender = info[2]
+end
 def store ( array )
+   newArray = change(array)
    File.open("student.yaml","w") do |io|
-   YAML.dump(array,io)
+     YAML.dump(newArray,io)
    end
 end
 
 def show(array)
   array.each do |i|
-      puts array[i].info
+      puts i.info
   end
 end
 
 
-def change(array)   #用哈希保存学生信息
-  hash = Hash.new
+def change(array)   #用哈希数组保存学生信息
+  newArray = Array.new
+  array.each do |i|
+     hash = Hash("id" => i.id, "name" => i.name, "age" => i.age, "gender" => i.gender)
+     newArray.push(hash)
+  end
+  return  newArray
+end
 
-
+def rechange(newArray)
+  array = Array.new
+  newArray.each do |i|
+     student = Student.new(i["id"].to_i, i["name"], i["age"], i["gender"])
+     array.push(student)
+  end
+  return array
 end
 
 
@@ -56,7 +75,7 @@ def order(array)
   n = gets
   case n.to_i
   when 1
-    array = array.sort_by {|u| u.id}
+    array = array.sort_by {|u| u.id.to_i}
     show(array)
   when 2
     array = array.sort_by {|u| u.name}
@@ -71,7 +90,8 @@ def order(array)
 end
 
 if File::exists?( "student.yaml" )
-   array = YAML.load_file("student.yaml")
+   newArray = YAML.load_file("student.yaml")
+   array = rechange(newArray)
 else
    array =Array.new
    100.times do |i|
@@ -85,26 +105,26 @@ end
 
 loop do
    puts "                       学生管理系统"
-   puts "                         1、添加"
-   puts "                         2、删除"
-   puts "                         3、修改"
-   puts "                         4、查询"
-   puts "                         5、排序"
+   puts "                         1、添加学生"
+   puts "                         2、删除学生"
+   puts "                         3、修改学生信息"
+   puts "                         4、查询学生信息"
+   puts "                         5、学生排序"
    puts "                         0、退出"
    n = gets
 
    case n.to_i
    when 1
-     array.push(add(array.length-1))
+     array.push(add(array.length))
      store(array)
    when 2
      puts "请输入要删除学生的id"
      n = gets
      j=0
      array.each do |i|
-       if array[i].id == n.to_i
-          array.delete_at(i)
-          j = i
+       if i.id == n.to_i
+          j = i.id
+          array.delete(i)
           break
        end
      end
@@ -115,11 +135,9 @@ loop do
    when 3
      puts "请输入要修改学生的id"
      n = gets
-     stu = add(n.to_i)
      array.each do |i|
-       if array[i].id == n.to_i
-          array.delete_at(i)
-          array[i] = stu
+       if i.id == n.to_i
+          correct(i)
           break
        end
      end
@@ -129,13 +147,14 @@ loop do
      n = gets
      j=0
      array.each do |i|
-       if array[i].id == n.to_i
-          puts array[i].info
+       if i.id == n.to_i
+          j = i
+          puts i.info
           break
        end
-       j = i
+
      end
-     if j == array.length-1
+     if j == array.length
         puts "此学生不存在！"
      end
 
