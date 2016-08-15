@@ -38,10 +38,18 @@ def store ( array )
 end
 
 def show(array)
-  array.length.times do |i|
+  array.each do |i|
       puts array[i].info
   end
 end
+
+
+def change(array)   #用哈希保存学生信息
+  hash = Hash.new
+
+
+end
+
 
 def order(array)
   puts "1.Id排序 2.姓名排序 3.年龄排序"
@@ -75,7 +83,7 @@ else
    store(array)
 end
 
-while 1
+loop do
    puts "                       学生管理系统"
    puts "                         1、添加"
    puts "                         2、删除"
@@ -93,7 +101,7 @@ while 1
      puts "请输入要删除学生的id"
      n = gets
      j=0
-     array.length.times do |i|
+     array.each do |i|
        if array[i].id == n.to_i
           array.delete_at(i)
           j = i
@@ -108,7 +116,7 @@ while 1
      puts "请输入要修改学生的id"
      n = gets
      stu = add(n.to_i)
-     array.length.times do |i|
+     array.each do |i|
        if array[i].id == n.to_i
           array.delete_at(i)
           array[i] = stu
@@ -120,7 +128,7 @@ while 1
      puts "请输入要查询学生的id"
      n = gets
      j=0
-     array.length.times do |i|
+     array.each do |i|
        if array[i].id == n.to_i
           puts array[i].info
           break

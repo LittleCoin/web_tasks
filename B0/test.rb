@@ -6,10 +6,7 @@ print <<EOF
     信不信啊你
 EOF
 
-print <<"EOF";                # 与上面相同
-    傅强是我老婆
-    不信拉倒
-EOF
+
 
 print <<`EOC`                 # 执行命令
 	echo fuck him
@@ -40,8 +37,5 @@ puts '听说这个不能用"\\" \ \\'
 
 name="Mr yu"
 puts "#{name+" is your father"}"
-
-
-class yuqinghan{
-
-}
+hash = Hash.new [[1,"yuqinghan"] => [15,"男"]]
+puts "#{hash[1]}"
