@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>留言板</title>
+  </head>
+  <body>
+    <form action="/" method="get">
+     <div>
+       <select name="method">
+         <option value="id">id搜索</option>
+         <option value="author">作者搜索</option>
+     </div>
+     <div>
+       <input type="text" name="info">
+       <input type="submit" value="提交">
+     </div>
+   </form>
+    <table>
+      <thead>
+       <tr>
+         <th>id</th>
+         <th>作者</th>
+         <th>时间</th>
+         <th>留言</th>
+       </tr>
+      </thead>
+      <tbody>
+       <% @newmess.each do |i| %>
+         <tr>
+           <td><%=i.id%></td>
+           <td><%=i.author%></td>
+           <td><%=i.created_at%></td>
+           <td><p><%=i.message%></p></td>
+           <td>
+             <a href="/delete/<%=i.id%>">
+              <input type="button" value="删除" >
+            </a>
+           </td>
+           <td>
+             <form action="/re_edit/:<%=i.id%>" method="get">
+               <input type="submit" value="编辑">
+             </form>
+           </td>
+         </tr>
+       <%end%>
+      </tbody>
+    </table>
+    <a href="/add">新建留言</a>
+  </body>
+</html>
