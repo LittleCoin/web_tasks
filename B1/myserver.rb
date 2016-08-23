@@ -45,11 +45,11 @@ post "/add" do
   if params[:message].to_s.length >= 10 && params[:author] != ""
      mes = Message.new(0, params[:message], params[:author], )
      messmanager.add_mess(mes)
-     '添加完成<br>两秒后返回留言板<meta http-equiv ="refresh" content="2;url=/">'
+     '<p style="text-align:center;">添加完成<br>两秒后返回留言板</p><meta http-equiv ="refresh" content="2;url=/">'
   else
     session["message"] = params[:message]
     session["author"] = params[:author]
-    '添加失败，请确认作者不为空，留言内容不少于十个字<br>两秒后返回重新编辑<meta http-equiv ="refresh" content="2;url=/re_add">'
+    '<p style="text-align:center;">添加失败，请确认作者不为空，留言内容不少于十个字<br>两秒后返回重新编辑</p><meta http-equiv ="refresh" content="2;url=/re_add">'
   end
 end
 
@@ -62,9 +62,9 @@ end
 get "/delete/:id" do
   m = messmanager.delete_mes(params["id"])
   if m == -1
-    'id错误,发现不存在id<br>两秒后返回留言板<meta http-equiv ="refresh" content="2;url=/">'
+    '<p style="text-align:center;">id错误,发现不存在id<br>两秒后返回留言板</p><meta http-equiv ="refresh" content="2;url=/">'
   else
-    '删除成功<br>两秒后返回留言板<meta http-equiv ="refresh" content="2;url=/">'
+    '<p style="text-align:center;">删除成功<br>两秒后返回留言板</p><meta http-equiv ="refresh" content="2;url=/">'
   end
 end
 
@@ -93,12 +93,12 @@ post "/re_edit" do
         break
       end
     end
-  '编辑完成<br>两秒后返回留言板<meta http-equiv ="refresh" content="2;url=/">'
+  '<p style="text-align:center;">编辑完成<br>两秒后返回留言板</p><meta http-equiv ="refresh" content="2;url=/">'
   else
     session["id"] = params[:id]
     session["message"] = params[:message]
     session["author"] = params[:author]
-    '编辑失败，请确认作者不为空，留言内容不少于十个字<br>两秒后返回重新编辑<meta http-equiv ="refresh" content="2;url=/fail_re_edit">'
+    '<p style="text-align:center;">编辑失败，请确认作者不为空，留言内容不少于十个字<br>两秒后返回重新编辑</p><meta http-equiv ="refresh" content="2;url=/fail_re_edit">'
   end
 end
 
@@ -109,6 +109,6 @@ get "/fail_re_edit" do
   erb :re_edit
 end
 
-#error do
-#  '对不起，这里发生错误 + env['sinatra.error'].message
-#end
+error do
+  '对不起，这里发生错误' + env['sinatra.error'].message
+end
