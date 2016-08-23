@@ -32,7 +32,7 @@ class  Message_manage
   end
 
   def search_id(id)
-    result = Array.[]
+    result = []
     @message.each do |i|
       if i.id == id.to_i
         result << i
@@ -42,7 +42,7 @@ class  Message_manage
   end
 
   def search_author(author)
-    result = Array.[]
+    result = []
     @message.each do |i|
       if i.author == author
         result << i

@@ -1,14 +1,14 @@
 require 'sinatra'
 require File.expand_path('../messageboard', __FILE__)
 
-def newpass( len )
+def newpass(len)
       chars = ("a".."z").to_a
       newpass = ""
       1.upto(len) { |i| newpass << chars[rand(chars.size-1)] }
       return newpass
 end
 
-mess = Array.[]
+mess = []
 10.times do |i|
   au = newpass(5).capitalize
   mes = newpass(20)
@@ -49,15 +49,10 @@ post "/add" do
   else
     session["message"] = params[:message]
     session["author"] = params[:author]
-    '<p style="text-align:center;">添加失败，请确认作者不为空，留言内容不少于十个字<br>两秒后返回重新编辑</p><meta http-equiv ="refresh" content="2;url=/re_add">'
+    '<p style="text-align:center;">添加失败，请确认作者不为空，留言内容不少于十个字<br>两秒后返回重新编辑</p><meta http-equiv ="refresh" content="2;url=/add">'
   end
 end
 
-get "/re_add" do
-  @message = session["message"]
-  @author = session["author"]
-  erb :add
-end
 
 get "/delete/:id" do
   m = messmanager.delete_mes(params["id"])
@@ -98,16 +93,10 @@ post "/edit" do
     session["id"] = params[:id]
     session["message"] = params[:message]
     session["author"] = params[:author]
-    '<p style="text-align:center;">编辑失败，请确认作者不为空，留言内容不少于十个字<br>两秒后返回重新编辑</p><meta http-equiv ="refresh" content="2;url=/fail_re_edit">'
+    '<p style="text-align:center;">编辑失败，请确认作者不为空，留言内容不少于十个字<br>两秒后返回重新编辑</p><meta http-equiv ="refresh" content="2;url=/edit">'
   end
 end
 
-get "/fail_re_edit" do
-  @id = session["id"].to_i
-  @message = session["message"]
-  @author = session["author"]
-  erb :edit
-end
 
 error do
   '对不起，这里发生错误' + env['sinatra.error'].message
