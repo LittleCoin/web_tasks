@@ -29,7 +29,7 @@ get '/' do
     @newmess = messmanager.search_id(info.to_i)
     erb :show
   else method == "author"
-    @newmess = messmanager.search_author(info.to_s)
+    @newmess = messmanager.search_author(info)
     erb :show
   end
 end
@@ -68,7 +68,7 @@ get "/delete/:id" do
   end
 end
 
-get '/re_edit/:id' do
+get '/edit/:id' do
   @message = ''
   @author = ''
   @id = 0
@@ -80,10 +80,10 @@ get '/re_edit/:id' do
       break
     end
   end
-  erb :re_edit
+  erb :edit
 end
 
-post "/re_edit" do
+post "/edit" do
   if params[:message].to_s.length >= 10 && params[:author] != ""
     messmanager.message.each do |i|
       if i.id == params[:id].to_i
@@ -106,7 +106,7 @@ get "/fail_re_edit" do
   @id = session["id"].to_i
   @message = session["message"]
   @author = session["author"]
-  erb :re_edit
+  erb :edit
 end
 
 error do
