@@ -9,14 +9,15 @@ def newpass(len)
 end
 
 mess = []
+messmanager = Message_manage.new(mess)
 10.times do |i|
-  au = newpass(5).capitalize
-  mes = newpass(20)
-  mess << Message.new(i, mes, au)
+  author = newpass(5).capitalize
+  message = newpass(20)
+  messmanager.message << Message.new(messmanager.mk_id, message, author)
 end
 
 
-messmanager = Message_manage.new(mess)
+
 
 
 get '/' do
@@ -64,12 +65,8 @@ get "/delete/:id" do
 end
 
 get '/edit/:id' do
-  @message = ''
-  @author = ''
-  @id = 0
   messmanager.message.each do |i|
     if i.id == params["id"].to_i
-      @message = i.message
       @author = i.author
       @id = i.id
       break
@@ -88,11 +85,8 @@ post "/edit" do
         break
       end
     end
-  '<p style="text-align:center;">编辑完成<br>两秒后返回留言板</p><meta http-equiv ="refresh" content="2;url=/">'
+    '<p style="text-align:center;">编辑完成<br>两秒后返回留言板</p><meta http-equiv ="refresh" content="2;url=/">'
   else
-    session["id"] = params[:id]
-    session["message"] = params[:message]
-    session["author"] = params[:author]
     '<p style="text-align:center;">编辑失败，请确认作者不为空，留言内容不少于十个字<br>两秒后返回重新编辑</p><meta http-equiv ="refresh" content="2;url=/edit">'
   end
 end

@@ -13,21 +13,22 @@ class Message
 end
 
 class  Message_manage
-
+  @@number = 0
   attr_accessor :message
 
   def initialize(message)
     @message = message
   end
 
+  def mk_id
+    @@number+=1
+    return @@number
+  end
+
   def add_mess(mess)
-    if @message.empty?
-      @message << mess
-    else
-      id = @message.at(-1).id
-      mess.id = id + 1
-      @message << mess
-    end
+    @@number+=1
+    mess.id = @@number
+    @message << mess
     return mess.id
   end
 
