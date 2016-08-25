@@ -75,7 +75,7 @@ get '/edit/:id' do
   erb :edit
 end
 
-post "/edit" do
+post "/edit/:id" do
   if params[:message].to_s.length >= 10 && params[:author] != ""
     messmanager.message.each do |i|
       if i.id == params[:id].to_i
